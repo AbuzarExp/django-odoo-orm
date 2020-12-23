@@ -16,7 +16,7 @@ class OdooUnsafeMixin:
         return super().dispatch(request, *args, **kwargs)
 
 
-def dangerous_odoo(f):
+def odoo_unsafe(f):
     def wrapper(*args, **kwargs):
         if not odoo.safe:
             raise PermissionDenied()
