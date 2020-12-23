@@ -9,4 +9,4 @@ class DjangoOdooOrm(AppConfig):
 
     def ready(self):
         odoo = OdooConnection.get_connection()
-        odoo.connect(**{k.lower(): v for k, v in ODOO_CONNECTION})
+        odoo.connect(**{k.lower(): v for k, v in ODOO_CONNECTION.items()})
