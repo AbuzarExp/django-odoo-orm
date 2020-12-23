@@ -3,8 +3,8 @@ from django.conf import settings
 from odoo_orm.connection import OdooConnection
 
 
-class OdooOrmConfig(AppConfig):
-    name = 'odoo_orm'
+class DjangoOdooOrm(AppConfig):
+    name = 'django_odoo_orm'
 
     def ready(self):
         odoo = OdooConnection.get_connection()
