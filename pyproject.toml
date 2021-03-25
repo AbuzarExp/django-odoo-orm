@@ -10,7 +10,8 @@ homepage = "https://github.com/mistiru/django-odoo-orm"
 [tool.poetry.dependencies]
 python = "^3.9"
 Django = "^3.1.4"
-odoo-orm = "^0.3.0"
+odoo-orm = "^0.4.6"
+pytz = "2021.1"
 
 [tool.poetry.dev-dependencies]
 
