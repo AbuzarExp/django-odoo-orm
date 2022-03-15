@@ -6,6 +6,10 @@ authors = ["mistiru <dev@mistiru.me>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/mistiru/django-odoo-orm"
+classifiers = [
+    "Framework :: Django",
+    "Framework :: Django :: 4.0"
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
